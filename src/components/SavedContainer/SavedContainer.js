@@ -5,6 +5,7 @@ class SavedContainer extends Component {
     render() {
         return (
             <div class="SavedContainer">
+                <h6>Saved Books</h6>
                 <SavedBooks />
             </div>
         );

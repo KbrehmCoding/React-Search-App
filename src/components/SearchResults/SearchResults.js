@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardContent } from 'react-materialize';
-import book from ''
+import book from ".../models/book"
 
 class SearchResults extends Component {
     render() {

@@ -5,6 +5,7 @@ class SearchResultsContainer extends Component {
     render() {
         return (
             <div class="SearchResultsContainer">
+                <h6>Results</h6>
                 <SearchResults />
             </div>
         );

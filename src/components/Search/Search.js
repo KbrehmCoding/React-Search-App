@@ -4,8 +4,10 @@ class SearchInput extends Component {
     render() {
         return (
             <div class="SearchContainer">
+                <h6>Book Search</h6>
+                <label>Book</label>
                 <input id="search" placeholder="Search"/>
-                <i class="material-icons">search</i>
+                <button>Search</button>
             </div>
         );
     }
