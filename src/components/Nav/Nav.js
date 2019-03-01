@@ -6,7 +6,7 @@ class Nav extends Component {
         return (
             <HashRouter>
                 <Navbar brand='Google Books' right>
-                    <NavLink to='/Search'>Search</NavLink>
+                    <NavLink to='/'>Search</NavLink>
                     <NavLink to='/Saved'>Saved</NavLink>
                 </Navbar>
             </HashRouter>

@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Jumbo />
-        <route path="/Search" Component{Search, SearchResults, SearchResultsContainer}/>
+        <route path="/" Component{Search, SearchResults, SearchResultsContainer}/>
         <route path="/Saved" Component{SavedBooks, SavedContainer}/>
         <Footer />
       </div>
