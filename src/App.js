@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Footer from './components/Footer/Footer';
+import Jumbo from './components/Jumbo/Jumbo';
+import Nav from './components/Nav/Nav';
+import Search from './components/Search/Search';
+import SearchContainer from './components/SearchResultsContainer';
+import SavedContainer from './components/SavedContainer/SavedContainer';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Nav />
+        <Jumbo />
+        <Search />
+
+        <Footer />
       </div>
     );
   }
