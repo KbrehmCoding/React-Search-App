@@ -8,7 +8,11 @@ class SearchResults extends Component {
             <div class="SearchResults">
                 <Card className='small'>Card Title
                     <CardContent>
-                        {book}
+                        {book.title}
+                        {book.subtitle}
+                        {book.authors}
+                        {book.image} {book.description}
+                        <button>Save</button>
                     </CardContent>
                 </Card>
             </div>
