@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import Footer from './components/Footer/Footer';
 import Jumbo from './components/Jumbo/Jumbo';
 import Nav from './components/Nav/Nav';
@@ -13,8 +14,8 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Jumbo />
-        <Search />
-
+        <route path="/Search" Component{Search, SearchResults, SearchResultsContainer}/>
+        <route path="/Saved" Component{SavedBooks, SavedContainer}/>
         <Footer />
       </div>
     );
