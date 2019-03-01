@@ -8,7 +8,12 @@ class SavedBooks extends Component {
             <div class="SavedBooks">
                 <Card className='small'>
                     <CardContent>
-                        {book}
+                        {book.title}
+                        {book.subtitle}
+                        {book.authors}
+                        {book.image} {book.description}
+                        <button>Veiw</button>
+                        <button>Delete</button>
                     </CardContent>
                 </Card>
             </div>
