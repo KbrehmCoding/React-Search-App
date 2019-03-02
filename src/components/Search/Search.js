@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// look at 3/28 class example to make sure search is hooked up to backend
 class SearchInput extends Component {
     render() {
         return (
