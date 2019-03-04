@@ -14,6 +14,7 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Jumbo />
+        {/* Find out why this route doesnt like the way I am entering the components */}
         <route path="/" Component{ ... Search, SearchResults, SearchResultsContainer }/>
         <route path="/Saved" Component{ ... SavedBooks, SavedContainer }/>
         <Footer />

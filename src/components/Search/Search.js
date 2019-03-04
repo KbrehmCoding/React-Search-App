@@ -6,7 +6,8 @@ class SearchInput extends Component {
             <div class="SearchContainer">
                 <h6>Book Search</h6>
                 <label>Book</label>
-                <input id="search" placeholder="Search"/>
+                {/* TODO link google search to this input */}
+                <input id="search" placeholder="Search" type="text"/>
                 <button>Search</button>
             </div>
         );

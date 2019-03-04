@@ -8,6 +8,7 @@ class SearchResults extends Component {
             <div class="SearchResults">
                 <Card className='small'>Card Title
                     <CardContent>
+                    {/* figure out the correct way to call this */}
                         {book.title}
                         {book.subtitle}
                         {book.authors}
