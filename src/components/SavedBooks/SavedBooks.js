@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
+import { Router, HashRouter} from "react-Router-dom";
 import { Card, CardContent } from 'react-materialize';
 import book from ".../models/book"
 
 class SavedBooks extends Component {
     render() {
         return (
-            <div class="SavedBooks">
-                <Card className='small'>
-                    <CardContent>
-                        {book.title}
-                        {book.subtitle}
-                        {book.authors}
-                        {book.image} {book.description}
-                        <button>Veiw</button>
-                        <button>Delete</button>
-                    </CardContent>
-                </Card>
-            </div>
+            <HashRouter>
+                <div class="SavedBooks">
+                    <Card className='small'>
+                        <CardContent>
+                            <div>
+                            {/* Need to look into how to correctly call the books api to this card */}
+                                <Router path=".../models/book">
+
+                                </Router>
+                            </div>
+                            <button>Veiw</button>
+                            <button>Delete</button>
+                        </CardContent>
+                    </Card>
+                </div>
+            </HashRouter>
         );
     }
 }
