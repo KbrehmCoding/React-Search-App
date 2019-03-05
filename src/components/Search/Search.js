@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import routes from '../../../routes/api/google'
-// look at 3/28 class example to make sure search is hooked up to backend
+import routes from '../../../routes/api/google';
+
 class SearchInput extends Component {
     state = {
         query: '',
@@ -12,7 +12,6 @@ class SearchInput extends Component {
         })
     }
     // TODO find way to use the routes export to connect search inpit to this input
-
     render() {
         return (
             <div class="SearchContainer">

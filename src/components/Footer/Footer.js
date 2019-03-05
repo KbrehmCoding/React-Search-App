@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Footer } from 'react-materialize';
 
-class Footer extends Component {
+class BookFooter extends Component {
     render() {
         return (
             <Footer className="Footer" right fixed>
@@ -13,4 +13,4 @@ class Footer extends Component {
     }
 }
 
-export default Footer;
+export default BookFooter;
