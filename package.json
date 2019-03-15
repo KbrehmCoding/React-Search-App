@@ -2,30 +2,7 @@
   "name": "react-search-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "react-scripts start",
-    "client": "cd client && npm run start",
-    "build": "react-scripts build",
-    "heroku-postbuild": "npm run build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "express": "^4.16.4",
-    "nodemon": "^1.18.10",
-    "path": "^0.12.7",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-materialize": "^2.6.0",
-    "react-scripts": "2.1.5"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {}
 }
