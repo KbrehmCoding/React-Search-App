@@ -1,8 +1,8 @@
-const router = require("express").Router();
-const googleController = require("../../controllers/googleController");
+const router = require('express').Router();
+const googleController = require('../../controllers/googleController');
 
 router
-  .route("/")
+  .route('/')
   .get(googleController.findAll);
 
 module.exports = router;

@@ -1,31 +1,21 @@
-import React, { Component } from "react";
-import { Route, Router, Switch } from "react-Router-dom";
-import BookFooter from "./components/Footer/Footer";
-import Jumbo from "./components/Jumbo/Jumbo";
-import Nav from "./components/Nav/Nav";
-import SearchInput from "./components/Search/Search";
-import SearchResults from "./components/SearchResults/SearchResults";
-import SearchResultsContainer from "../components/SearchResultsContainer";
-import SavedBooks from "./components/SavedBooks/SavedBooks";
-import SavedContainer from "./components/SavedContainer/SavedContainer";
-import "./App.css";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Home from './components/Home';
+import NotFound from './components/NotFound';
+import Saved from './components/Saved';
+import Search from './components/Search';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <Nav />
-          <Jumbo />
-          <Switch>
-            <Route path="/Search" Component={ SearchInput } />
-            <Route path="/Search" Component={ SearchResults } />
-            <Route path="/Search" Component={ SearchResultsContainer } />
-            <Route path="/Saved" Component={ SavedBooks } />
-            <Route path="/Saved" Component={ SavedContainer } />
-          </Switch>
-          <BookFooter />
-        </div>
+        <Switch>
+          <Route exact path="/" component={ Home } />
+          <Route path="/search" component={ Search } />
+          <Route path="/saved" component={ Saved } />
+          <Route component={ NotFound } />
+        </Switch>
       </Router>
     );
   }
