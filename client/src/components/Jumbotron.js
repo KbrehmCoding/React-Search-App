@@ -4,7 +4,7 @@ class Jumbotron extends Component {
   render() {
     return (
       <>
-        <h1>Google Book Search</h1>
+        <h1>(React)Google Book Search</h1>
         <h5>Search For and Save Books Of Interest</h5>
       </>
     );

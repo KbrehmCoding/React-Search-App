@@ -9,6 +9,7 @@ import Search from './components/Search';
 class App extends Component {
   render() {
     return (
+      // <Home/>
       <Router>
         <Switch>
           <Route exact path="/" component={ Home } />
